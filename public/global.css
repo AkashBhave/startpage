@@ -1,4 +1,4 @@
-@import "./normalize.css";
+@import "./reset.css";
 
 html,
 body {
@@ -9,8 +9,4 @@ body {
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-p {
-  margin: 0;
 }

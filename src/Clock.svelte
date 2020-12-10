@@ -56,7 +56,7 @@
 
 <section>
   <div id="time">
-    <span>{String(hours % 12).padStart(2, '0')}</span>
+    <span>{String(((hours + 11) % 12) + 1).padStart(2, '0')}</span>
     <span class="separator">:</span>
     <span>{String(minutes).padStart(2, '0')}</span>
     <span class="separator">:</span>
