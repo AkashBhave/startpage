@@ -35,7 +35,7 @@
 <style>
   section {
     display: flex;
-    width: 50%;
+    width: 600px;
     align-items: center;
     justify-items: center;
   }

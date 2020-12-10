@@ -1,5 +1,11 @@
 # Start Page
 
+The page uses the "bang" feature from DuckDuckGo to allow for searching on a variety of sites.
+
+## Screenshot
+
+<img src="screenshot.png" alt="Screenshot" />
+
 ## Develop
 
 Install the dependencies:
@@ -27,4 +33,4 @@ To create an optimised version of the app:
 npm run build
 ```
 
-You can run the newly built app with `npm run start`. This uses [sirv](https://github.com/lukeed/sirv), which is included in your package.json's `dependencies` so that the app will work when you deploy to platforms like [Heroku](https://heroku.com).
+You can use `npm run start` to run a production server with `sirv`. On my computer, I use [miniserve](https://github.com/svenstaro/miniserve) to serve the files efficiently. Also, Rust.
