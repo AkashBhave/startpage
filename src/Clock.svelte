@@ -34,7 +34,7 @@
     display: flex;
     font-size: 2.5em;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   #time .meridiem {
     margin-left: 20px;
@@ -44,7 +44,7 @@
 
   #weekday {
     font-size: 1em;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     opacity: 0.8;
   }
 

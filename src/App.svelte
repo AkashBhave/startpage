@@ -1,5 +1,6 @@
 <script lang="ts">
   import Clock from "./Clock.svelte";
+  import Greeting from "./Greeting.svelte";
 </script>
 
 <style>
@@ -32,8 +33,16 @@
     background-color: #dee5f0;
     color: #183675;
   }
+
+  hr {
+    width: 30%;
+    opacity: 0.2;
+    margin: 30px auto;
+  }
 </style>
 
 <main>
+  <Greeting />
+  <hr />
   <Clock />
 </main>
