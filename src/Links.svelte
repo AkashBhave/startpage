@@ -2,6 +2,7 @@
   type Link = {
     name: string;
     url: string;
+    color: string;
   };
 
   let links: { [category: string]: Link[] } = {
@@ -9,32 +10,49 @@
       {
         name: "Mail",
         url: "https://mail.google.com/mail/u/0",
+        color: "#EA4335",
       },
       {
         name: "GitHub",
         url: "https://www.github.com",
+        color: "#323131",
       },
       {
         name: "Strava",
         url: "https://www.strava.com",
+        color: "#FE5E00",
+      },
+      {
+        name: "Facebook",
+        url: "https://www.facebook.com",
+        color: "#4064AC",
+      },
+      {
+        name: "Reddit",
+        url: "https://www.reddit.com",
+        color: "#EC4E14",
       },
     ],
     School: [
       {
         name: "Mail",
         url: "https://mail.google.com/mail/u/1",
+        color: "#EA4335",
       },
       {
         name: "Blackboard",
         url: "https://fcps.blackboard.com",
+        color: "#B38432",
       },
       {
         name: "Classroom",
         url: "https://classroom.google.com/u/1",
+        color: "#3E9958",
       },
       {
         name: "Grades",
         url: "https://sisstudent.fcps.edu",
+        color: "#642068",
       },
     ],
   };
@@ -64,12 +82,18 @@
     opacity: 0;
     display: inline;
     margin-left: 10px;
-    transition: 0.5s all ease;
+    transition: 0.3s all ease-out;
     fill: #183675;
   }
   .link:hover,
   .link:hover .arrow {
     opacity: 1;
+  }
+
+  .color {
+    height: 10px;
+    width: 10px;
+    margin-right: 10px;
   }
 </style>
 
@@ -80,6 +104,7 @@
       <div>
         {#each links[category] as link}
           <a class="link" href={link.url}>
+            <div class="color" style="background-color: {link.color};" />
             <span>{link.name}</span>
             <svg
               class="arrow"
