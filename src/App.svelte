@@ -34,6 +34,11 @@
     background-color: #dee5f0;
     color: #183675;
   }
+  @media screen and (max-height: 650px) {
+    main {
+      font-size: 3.5vh;
+    }
+  }
 
   hr {
     width: 30%;
