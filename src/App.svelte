@@ -1,6 +1,7 @@
 <script lang="ts">
-  import Clock from "./Clock.svelte";
   import Greeting from "./Greeting.svelte";
+  import Search from "./Search.svelte";
+  import Clock from "./Clock.svelte";
   import Links from "./Links.svelte";
 </script>
 
@@ -49,6 +50,8 @@
 
 <main>
   <Greeting />
+  <hr />
+  <Search />
   <hr />
   <Clock />
   <hr />
