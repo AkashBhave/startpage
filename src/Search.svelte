@@ -24,7 +24,7 @@
     // Submit the search with DuckDuckGo
     if (event.code == "Enter") {
       if (bang == "") bang = "g";
-      const url = `https://duckduckgo.com/?q=!${bang} ${search}`;
+      const url = `https://duckduckgo.com/?q=!${encodeURIComponent(bang)} ${encodeURIComponent(search)}`;
       console.log(url);
       window.location.replace(url);
       return;
