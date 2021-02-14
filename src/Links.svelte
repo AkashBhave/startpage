@@ -69,6 +69,11 @@
     margin: 0 0 20px;
     font-size: 1em;
   }
+	@media screen and (max-height: 650px) {
+			.category {
+					margin-bottom: 10px;
+					}
+	}
 
   .link {
     font-size: 0.6em;
@@ -78,6 +83,11 @@
     display: flex;
     align-items: center;
   }
+	@media screen and (max-height: 650px) {
+			.link {
+					margin-bottom: 3px;
+			}
+	}
   .arrow {
     opacity: 0;
     display: inline;

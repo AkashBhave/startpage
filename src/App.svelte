@@ -37,8 +37,11 @@
   }
   @media screen and (max-height: 650px) {
     main {
-      font-size: 3.5vh;
+      font-size: 4vh;
     }
+		#top {
+				display: none;
+		}
   }
 
   hr {
@@ -49,8 +52,10 @@
 </style>
 
 <main>
+		<div id="top">
   <Greeting />
   <hr />
+	</div>
   <Search />
   <hr />
   <Clock />
